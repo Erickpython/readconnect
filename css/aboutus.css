@@ -1,0 +1,166 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #1c1c1c;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.navbar nav a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar nav a:hover {
+  background-color: #FFD700;
+  color: #000;
+}
+
+/* Header */
+.header {
+  background-color: #000;
+  color: #FFD700;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* Content Container */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+#title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+#story p,
+#current p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#story a,
+#current a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+#story a:hover,
+#current a:hover {
+  text-decoration: underline;
+  color: #FFC300;
+}
+
+#story img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#current h3 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #000;
+  border-left: 6px solid #FFD700;
+  padding-left: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #FFD700;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer a {
+  color: #FFD700;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #FFC300;
+}
+
+.footer p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  color: #FFD700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h3 {
+    font-size: 1.8rem;
+  }
+
+  #title {
+    font-size: 1.2rem;
+  }
+
+  #story img {
+    max-width: 100%;
+  }
+}
